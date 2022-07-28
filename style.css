@@ -1,9 +1,14 @@
 body {
     background-color: aquamarine;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 
 h1 {
-    justify-content: right;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: black;
 }
@@ -12,12 +17,6 @@ h1 {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-}
-
-body {
-    margin: 3%;
-    justify-content: center;
-    overflow: hidden;
 }
 
 h2 {
@@ -38,30 +37,45 @@ h2 {
     border-color: black;
     padding: 50px;
     margin: 20px;
-}
-
-.box-wrapper {
-    height: auto;
-    width: 100px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-#portfolio {
-    padding: 20px;
-    border: solid;
-    color: orange;
-}
-#contactme {
-    padding: 20px;
-    flex-grow: 1;
     display: flex;
     flex-direction: row;
-    border: solid;
-    color: orange;
+    justify-content: left;
+    align-items: center;
+    position: relative;
 }
+
+
+.box-wrapper {
+box-sizing: border-box;
+display: flex;
+flex-direction: row;
+justify-content: right;
+align-items: baseline;
+}
+
 #firstapplication {
-    flex-grow: 2;
-    border: solid;
-    color: orange;
+    width: 325px;
+    border: 10px;
+    border-style: dotted;
+    border-color: black;
+    padding: 50px;
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    position: relative; 
+}
+#contactme {
+    width: 325px;
+    border: 10px;
+    border-style: dotted;
+    border-color: black;
+    padding: 50px;
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    position: relative;
 }
